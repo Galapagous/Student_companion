@@ -1,0 +1,29 @@
+.item_container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: hsl(240, 56%, 5%);
+    width: 150px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color, width, height;
+    transition-timing-function: ease-in;
+    transition-duration: 200ms;
+    &:hover svg{
+        width: 25px;
+        height: 25px;
+        color: hsl(240, 56%, 5%);
+    }
+    &:hover{
+        color: hsl(240, 56%, 5%);
+        background-color: lightgray;
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        transition: background-color, width, height;
+        transition-timing-function: ease-in;
+        transition-duration: 400ms;
+    }
+}

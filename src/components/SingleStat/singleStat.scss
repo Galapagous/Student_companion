@@ -1,0 +1,93 @@
+.single_stat_container{
+    background-color: hsl(240, 56%, 5%);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 4rem;
+    color: white;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .single_top{
+        padding: 0px 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .single_item{
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        gap: 20px;
+        .box{
+            border: 1px solid grey;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .box1{
+            grid-column: 2 span;
+            grid-row: 2 span;
+            .ques_status{
+                .ques_top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                }
+                ul{
+                    li{
+                        list-style: lower-alpha;
+                        padding: 3px;
+                        margin: 5px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: rgb(33, 33, 94);
+                        border-radius: 3px;
+                    }
+                }
+                .test_navigate{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: 20px;
+                    gap: 10px;
+                    button{
+                        padding: 5px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        gap: 3px;
+                        &:hover{
+                            svg{
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box2{
+            .box2_top{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5px;
+                justify-content: space-between;
+            }
+            .box2_bottom{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .box3{
+            grid-column: 1 span;
+            grid-row: 2 span;
+
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.single_container{
+    overflow: hidden;
+    padding-top: 4rem;
+    height:450px;
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        width: 1px;
+    }
+    .single_main{
+        .single_top{
+            width: 80%;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            svg{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                border: 1px solid grey;
+                border-radius: 50%;
+            }
+            .add_course{
+                position: absolute;
+                top: 20%;
+                right: 4%;
+                background-color: rgb(14, 4, 41);
+                width: 150px;
+                height: 150px;
+                border-radius: 20px 0px 20px 20px;
+                text-align: center;
+                form{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    input{
+                        display: none;
+                    }
+                    button{
+                        padding: 3px 5px;
+                        cursor: pointer;
+                        color: rgb(14, 4, 41);
+                        border: none;
+                        width: 40px;
+                        height: 25px;
+                        &:hover{
+                            color: whitesmoke;
+                            background-color: rgb(14, 4, 41);
+                            border: 1px solid whitesmoke;
+                        }
+                    }
+                }
+            }
+        }
+        .single_content{
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            .file{
+                background-color: rgb(46, 43, 54);
+                width: 80%;
+                border-radius: 3px;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    font-size: 0.8rem;
+                }
+                .right{
+                    svg{
+                        cursor: pointer;
+                        width: 25px;
+                        height: 25px;
+                        &:nth-child(1){
+                            color: white;
+                            margin-right: 5px;
+                        }
+                        &:nth-child(2){
+                            color: white;
+                        }
+                    }
+                }
+            }
+            svg{
+                width: 30px;
+                height: 30px;
+                color: rgb(139, 3, 3);
+            }
+        }
+    }
+}

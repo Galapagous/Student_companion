@@ -1,0 +1,17 @@
+.layout_container{
+    color: whitesmoke;
+    background-color: hsl(240, 56%, 5%);
+    height: 100vh;
+    .layout_main{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        .left_side{
+            flex: 2;
+        }
+        .right_side{
+            flex: 8;
+        }
+    }
+}

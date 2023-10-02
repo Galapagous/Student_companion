@@ -1,0 +1,13 @@
+.leftbar_container{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
